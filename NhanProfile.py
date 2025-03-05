@@ -34,7 +34,7 @@ def merci():
 
 # Barre latérale avec le menu
 with st.sidebar:    
-    img_path = os.path.join(os.getcwd(), "nhanBD.jpg")
+    img_path = os.path.join(os.getcwd(), "NhanBD.jpg")
     st.image(img_path, width=150)
     st.write("06.18.36.75.66")     
     st.write("nhan.bildet@gmail.com")
