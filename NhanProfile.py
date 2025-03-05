@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 from streamlit_option_menu import option_menu
 import plotly.express as px
-import os
+
 ####
 df = pd.read_csv("formation.csv", sep=";", encoding="ISO-8859-1")
 df1 = pd.read_csv("Experience.csv", sep=";", encoding="ISO-8859-1")
@@ -34,8 +34,7 @@ def merci():
 
 # Barre latérale avec le menu
 with st.sidebar:    
-    img_path = os.path.join(os.getcwd(), "NhanBD.jpg")
-    st.image(img_path, width=150)
+    st.image("NhanBD.jpg", width=150)
     st.write("06.18.36.75.66")     
     st.write("nhan.bildet@gmail.com")
     col1,col2 = st.columns(2)
