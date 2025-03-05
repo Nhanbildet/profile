@@ -7,7 +7,7 @@ df = pd.read_csv("formation.csv", sep=";", encoding="ISO-8859-1")
 df1 = pd.read_csv("Experience.csv", sep=";", encoding="ISO-8859-1")
 df2 = pd.read_csv("Projet.csv", sep=";", encoding="ISO-8859-1")
 #"""""
-movie_stats = pd.read_csv('movie_stats.csv')
+movie_stats = pd.read_csv('movie_stats.csv.gz')
 movie_stats['Décennie'] = (movie_stats['startYear'] // 10) * 10
 df_films = movie_stats.loc[(movie_stats['startYear'] < 2025) & (movie_stats['revenue'] > 0) & (movie_stats['titleType'] == "movie")& (movie_stats['runtimeMinutes'] > 0)]
 df_films.dropna(subset= ['revenue', 'popularity', 'id', 'budget'],inplace= True) 
@@ -41,7 +41,7 @@ with st.sidebar:
     with col1:
         st.link_button("Linkedin",'https://www.linkedin.com/ in/nhanntt6/')
     with col2:
-        st.link_button("CV.pdf",'https://drive.google.com/file/d/1zNvExIVK5E9JjbM1usQmhMfvxoj1GAPM/view?usp=sharing')
+        st.link_button("CV.pdf",'https://drive.google.com/file/d/1TPtHtNab6AL-wW0qIORtE9tHM0twWVSl/view?usp=sharing')
     selection = option_menu(
         menu_title='Menu',
         options=['ACCUEIL', 'Projet Data 1', 'Projet data 2', 'Projet data 3'],
@@ -82,6 +82,8 @@ if selection == "Projet data 3":
     st.write("Objetif: Créer un système de recommandation pour les restaurants Michelin en France")
     st.write("Les outils principaux: APIs Open Data, Streamlit, Python....")
     st.write("Période: au 20/1/2025 du 21/02/2025")
+    st.link_button("Rechercher et évaluer les restaurants étoilés Michelin en France ",'https://restaurantmichelinfrance.streamlit.app')
+    st.image('Restaurant.jpg')
 if selection == "Projet Data 1":
     st.header("Projet data 1")
     st.write("Créer un tableau de bord pour une société de jouets au 8/10/2024 du 4/11/2024")
