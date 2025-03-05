@@ -23,9 +23,8 @@ df_films['nb_genres'] = df_films['genres'].apply(lambda x: fn_count_genre(x))
 def accueil():
     st.title('Nhan BILDET')
     st.header("Data Analyst")
-    st.write("Passionnée par les métiers de la data,\
-              je cherche un poste en alternance pour poursuivre mon évolution vers le métier de Data Engineer.\
-              Forte de mon expérience en marketing et commerce, ainsi que de ma formation certifiante en Data Analyst, je souhaite appliquer mes compétences pour réussir mes missions")
+    st.write("Animée par une passion pour les données et forte d'une solide \
+expérience en marketing et commerce complétée par une formation intensive en analyse de données, je souhaite rejoindre une entreprise en tant que Data Analyst à Bordeaux")
     st.markdown("<hr style='border: 0.3px solid white;'>", unsafe_allow_html=True)
 def merci():
     st.markdown("<hr style='border: 0.3px solid white;'>", unsafe_allow_html=True)
@@ -34,7 +33,7 @@ def merci():
 
 # Barre latérale avec le menu
 with st.sidebar:    
-    st.image("nhanBILDET.jpg", width= 150)
+    st.image("nhanBD.jpg", width= 150)
     st.write("06.18.36.75.66")     
     st.write("nhan.bildet@gmail.com")
     col1,col2 = st.columns(2)
@@ -54,8 +53,8 @@ if selection == "ACCUEIL":
     accueil()
     st.header("Compétences")
     st.write("• Collecte des données: SQL, API REST")
-    st.write("• Automatisation du traitement des données: algorithmie, Python, pandas")
-    st.write("• Visualisation des données: Power BI, Tableaux de bord")
+    st.write("• Automatisation du traitement des données: algorithmie, Python, Pandas")
+    st.write("• Visualisation des données: Power BI, Tableau")
     st.write("•	Modélisation des donnée structurées: Machine Learning")
     st.write("•	Soft Skill : Autonome, Résolution de problèmes, travail en équipe")  
     
